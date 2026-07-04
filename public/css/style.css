@@ -1,0 +1,167 @@
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+font-family:Arial,Helvetica,sans-serif;
+background:#0d0d0d;
+color:#fff;
+line-height:1.6;
+}
+
+header{
+background:#111;
+padding:20px 40px;
+border-bottom:3px solid #ffd700;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+header h1{
+color:#ffd700;
+font-size:2rem;
+letter-spacing:2px;
+}
+
+nav{
+margin-top:10px;
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+margin-right:20px;
+padding:8px 14px;
+border-radius:6px;
+transition:.3s;
+}
+
+nav a:hover{
+background:#ffd700;
+color:#000;
+}
+
+.hero{
+text-align:center;
+padding:100px 20px;
+background:linear-gradient(to bottom,#111,#1a1a1a);
+}
+
+.hero h2{
+font-size:3rem;
+color:#ffd700;
+margin-bottom:15px;
+}
+
+.hero p{
+color:#ccc;
+font-size:1.1rem;
+max-width:700px;
+margin:auto;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:12px 24px;
+background:#ffd700;
+color:#000;
+text-decoration:none;
+font-weight:bold;
+border-radius:8px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+background:#ffea4d;
+}
+
+.card-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+padding:50px;
+}
+
+.card{
+background:#161616;
+border:1px solid #2a2a2a;
+border-left:4px solid #ffd700;
+padding:25px;
+border-radius:12px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+border-color:#ffd700;
+}
+
+.card h3{
+color:#ffd700;
+margin-bottom:10px;
+}
+
+section{
+padding:60px 40px;
+}
+
+section h2{
+color:#ffd700;
+margin-bottom:20px;
+}
+
+input,textarea{
+width:100%;
+padding:12px;
+background:#1a1a1a;
+color:#fff;
+border:1px solid #333;
+border-radius:6px;
+margin-bottom:15px;
+}
+
+input:focus,textarea:focus{
+outline:none;
+border-color:#ffd700;
+}
+
+button{
+background:#ffd700;
+color:#000;
+border:none;
+padding:12px 20px;
+border-radius:6px;
+cursor:pointer;
+font-weight:bold;
+transition:.3s;
+}
+
+button:hover{
+background:#ffea4d;
+}
+
+footer{
+background:#111;
+border-top:3px solid #ffd700;
+text-align:center;
+padding:25px;
+color:#aaa;
+}
+
+::-webkit-scrollbar{
+width:10px;
+}
+
+::-webkit-scrollbar-track{
+background:#111;
+}
+
+::-webkit-scrollbar-thumb{
+background:#ffd700;
+border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+background:#ffea4d;
+}
