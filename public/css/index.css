@@ -1,15 +1,28 @@
+
 header{
 text-align:center;
 padding:5px 20px 20px;
 position:relative;
 }
-
 header h1{
 font-size:4rem;
 margin:0 0 10px;
 line-height:1;
+color:#ffd700;
+animation:titleColor 5s ease-in-out infinite;
 }
 
+@keyframes titleColor{
+0%{
+color:#ffd700;
+}
+50%{
+color:#ffb700;
+}
+100%{
+color:#ffd700;
+}
+} 
 nav:first-of-type{
 display:flex;
 justify-content:center;
