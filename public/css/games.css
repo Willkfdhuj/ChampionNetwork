@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background: #0f0f0f;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+h1 {
+    text-align: center;
+    color: #ffd700;
+    margin-bottom: 20px;
+}
+#searchBar {
+    display: block;
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background: #1a1a1a;
+    color: white;
+    outline: none;
+}
+#searchBar:focus {
+    border-color: #555;
+}
+#gameList {
+    list-style: none;
+    width: 90%;
+    margin: 20px auto 0;
+    padding: 20px 0 0;
+    border-top: 3px solid #ffd700;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 12px;
+}
+#gameList li {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+}
+#gameList a {
+    display: block;
+    padding: 14px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.2s, color 0.2s;
+}
+#gameList a:hover {
+    background: #ffd700;
+    color: black;
+}
