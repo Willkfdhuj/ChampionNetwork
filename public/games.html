@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Champion Network Games</title>
+      <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/games.css">
+</head>
+<body>
+<h1><strong>Champion Network Games</strong></h1>
+<input id="searchBar" placeholder="Search Games..." onkeyup="searchGames()">
+<ul id="gameList">
+  <li><a href="games/slope/index.html">Slope</a></li>
+  <li><a href="games/run3/index.html">Run 3</a></li>
+  <li><a href="games/tetris/index.html">Tetris</a></li>
+  <li><a href="games/2048/index.html">2048</a></li>
+  <li><a href="games/geometry-dash/index.html">Geometry Dash</a></li>
+  <li><a href="games/minecraft-classic/index.html">Minecraft Classic</a></li>
+  <li><a href="games/rooftop-snipers/index.html">Rooftop Snipers</a></li>
+  <li><a href="games/basketball-stars/index.html">Basketball Stars</a></li>
+  <li><a href="games/1v1-lol/index.html">1v1.LOL</a></li>
+  <li><a href="games/drift-hunters/index.html">Drift Hunters</a></li>
+
+  <li><a href="games/stickman-hook/index.html">Stickman Hook</a></li>
+  <li><a href="games/fireboy-watergirl/index.html">Fireboy and Watergirl</a></li>
+  <li><a href="games/cookie-clicker/index.html">Cookie Clicker</a></li>
+  <li><a href="games/bitlife/index.html">BitLife</a></li>
+  <li><a href="games/retro-bowl/index.html">Retro Bowl</a></li>
+  <li><a href="games/shell-shockers/index.html">Shell Shockers</a></li>
+  <li><a href="games/among-us/index.html">Among Us</a></li>
+  <li><a href="games/paper-io/index.html">Paper.io</a></li>
+  <li><a href="games/smash-karts/index.html">Smash Karts</a></li>
+  <li><a href="games/evowars/index.html">EvoWars</a></li>
+
+  <li><a href="games/moto-x3m/index.html">Moto X3M</a></li>
+  <li><a href="games/happy-wheels/index.html">Happy Wheels</a></li>
+  <li><a href="games/vex-6/index.html">Vex 6</a></li>
+  <li><a href="games/vex-7/index.html">Vex 7</a></li>
+  <li><a href="games/tunnel-rush/index.html">Tunnel Rush</a></li>
+  <li><a href="games/cluster-rush/index.html">Cluster Rush</a></li>
+  <li><a href="games/worlds-hardest-game/index.html">World's Hardest Game</a></li>
+  <li><a href="games/basket-random/index.html">Basket Random</a></li>
+  <li><a href="games/soccer-random/index.html">Soccer Random</a></li>
+  <li><a href="games/getaway-shootout/index.html">Getaway Shootout</a></li>
+
+  <li><a href="games/arcade/krunker/index.html">Krunker.io</a></li>
+  <li><a href="games/arcade/yohoho/index.html">YoHoHo.io</a></li>
+  <li><a href="games/arcade/slither/index.html">Slither.io</a></li>
+  <li><a href="games/arcade/deeeep/index.html">Deeeep.io</a></li>
+  <li><a href="games/arcade/curve/index.html">Curve Fever</a></li>
+  <li><a href="games/arcade/zombs/index.html">Zombs Royale</a></li>
+  <li><a href="games/arcade/stickfight/index.html">Stick Fight</a></li>
+  <li><a href="games/arcade/gun-mayhem/index.html">Gun Mayhem</a></li>
+  <li><a href="games/arcade/raft-wars/index.html">Raft Wars</a></li>
+  <li><a href="games/arcade/age-of-war/index.html">Age of War</a></li>
+
+  <li><a href="games/action/madalin-cars/index.html">Madalin Stunt Cars</a></li>
+  <li><a href="games/action/traffic-rider/index.html">Traffic Rider</a></li>
+  <li><a href="games/action/traffic-run/index.html">Traffic Run</a></li>
+  <li><a href="games/action/death-run/index.html">Death Run 3D</a></li>
+  <li><a href="games/action/temple-run/index.html">Temple Run 2</a></li>
+  <li><a href="games/action/subway-surfers/index.html">Subway Surfers</a></li>
+  <li><a href="games/action/crazy-taxi/index.html">Crazy Taxi</a></li>
+  <li><a href="games/action/ball-blast/index.html">Ball Blast</a></li>
+  <li><a href="games/action/angry-birds/index.html">Angry Birds</a></li>
+  <li><a href="games/action/cut-the-rope/index.html">Cut the Rope</a></li>
+</ul>
+<script>
+function searchGames() {
+  let v = document.getElementById("searchBar").value.toLowerCase()
+  document.querySelectorAll("#gameList li").forEach(i => {
+    i.style.display = i.textContent.toLowerCase().includes(v) ? "" : "none"
+  })
+}
+</script>
+</body>
+</html>
